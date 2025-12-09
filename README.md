@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ### **3. Results**
 
 Build your own model of proprioceptor and run the scripts.
----
+
 ## **License**
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
