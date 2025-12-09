@@ -1,4 +1,3 @@
-# Proprioceptor-Simualtion-Framework
 # **Proprioceptor Simualtion Framework**
 
 A framework of a lower limb musculoskeletal model with implemented natural proprioceptive feedback
