@@ -8,7 +8,7 @@ A framework of a lower limb musculoskeletal model with implemented natural propr
  The feedback control framework was established by combining Python codes, control setting files, and a biomechanical musculoskeletal model. The biomechanical musculoskeletal model was based on OpenSim software from a 3D lower limb musculoskeletal model.The feedback control loop consists of ascending neural control signals from the CNS and descending feedback signals from the muscle-tendon components. We implemented this framework in the forward dynamic tool. The neural excitation travels and exchanges in this loop. At each timestep, the muscle controlling signal is iteratively calculated by combining descending and ascending controlling signals after a defined neural delay. The current ascending signal input is the excitation signals from the computed muscle control (CMC) procedure in OpenSim package.
 
 ![Scheme of the simulation framework of the proprioceptive musculoskeletal model.](https://github.com/zhanghaotian0/Proprioceptor-Simualtion-Framework/blob/main/image/zhang2020.png)
-<img width="928" height="748" alt="image" src="https://github.com/zhanghaotian0/Proprioceptor-Simualtion-Framework/blob/main/image/zhang20202.jpg" />
+<img width="500" height="400" alt="image" src="https://github.com/zhanghaotian0/Proprioceptor-Simualtion-Framework/blob/main/image/zhang20202.jpg" />
 
 ## **System Usage**
 
