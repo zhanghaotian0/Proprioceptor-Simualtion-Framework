@@ -8,52 +8,7 @@ A framework of a lower limb musculoskeletal model with implemented natural propr
  The feedback control framework was established by combining Python codes, control setting files, and a biomechanical musculoskeletal model. The biomechanical musculoskeletal model was based on OpenSim software from a 3D lower limb musculoskeletal model.The feedback control loop consists of ascending neural control signals from the CNS and descending feedback signals from the muscle-tendon components. We implemented this framework in the forward dynamic tool. The neural excitation travels and exchanges in this loop. At each timestep, the muscle controlling signal is iteratively calculated by combining descending and ascending controlling signals after a defined neural delay. The current ascending signal input is the excitation signals from the computed muscle control (CMC) procedure in OpenSim package.
 
 ![1](https://github.com/zhanghaotian0/Proprioceptor-Simualtion-Framework/blob/main/image/zhang2020.png)
-
-### **Key Features**
-
-* **Multi-Array Ultrasound Probes**: The system uses a combination of **linear**, **convex**, and **phased array probes** to offer versatile imaging, enabling effective diagnosis across multiple organ systems.
-* **AI-Powered Diagnostics**: The system employs **VUSB-Net** for image-based diagnosis and **YRLDW-Net** for video-based analysis, capable of diagnosing **effusions** and **pneumothorax** in real-time.
-* **Portable and Lightweight**: Designed for easy handling and transport, it is perfectly suited for **emergency environments** and **fieldwork**.
-* **Offline Operation**: Both AI models work **offline**, enabling real-time diagnostics without the need for cloud computing or internet access.
-
----
-
-## **Diagnostic Models**
-
-### **1. Medical Image Diagnosis - VUSB-Net**
-
-**VUSB-Net** is a **UNet-based AI model** specifically designed for the **segmentation and classification of ultrasound images**. The model accurately identifies regions of **pericardial and abdominal effusion**, providing a reliable diagnosis in real-time. It is ideal for quick decision-making in emergency situations.
-
-![VUSB-Net Architecture](https://github.com/user-attachments/assets/20d9cb06-4d2f-4fe6-baee-fffc31fa9a49)
-
-*The **VUSB-Net** model efficiently segments effusion regions from ultrasound images, assisting in the diagnosis of conditions like pericardial and abdominal effusion.*
-
-### **2. Medical Video Diagnosis - YRLDW-Net**
-
-**YRLDW-Net** integrates **YOLOv8** for object detection and **LSTM** (Long Short-Term Memory) for video sequence analysis. This model is designed for **diagnosing pneumothorax** and other dynamic conditions in ultrasound video sequences. It tracks abnormalities over time, offering continuous monitoring for accurate diagnosis in clinical environments.
-
-<img width="964" height="571" alt="image" src="https://github.com/user-attachments/assets/60d75afa-4494-41f0-9888-15fef73dee10" />
-
-
-*The **YRLDW-Net** model uses YOLOv8 for object detection and LSTM for temporal video analysis to diagnose pneumothorax from continuous ultrasound video feeds.*
-
----
-
-## **On-Device AI Inference**
-
-The **USDiaSystem** leverages **edge AI models** optimized to run directly on devices such as smartphones or embedded systems. This allows for **real-time diagnostics** without the need for cloud-based computation, ensuring that the system remains operational even in remote or disaster scenarios.
-
-* **Edge Computing**: Both the **VUSB-Net** and **YRLDW-Net** models are optimized to run on **smartphones** and **embedded devices**. The inference time for each image/frame is **<0.65s**, ensuring fast and responsive diagnostics.
-* **Offline Operation**: Both AI models operate entirely offline once trained, making the system fully functional in environments without internet access.
-
-![On-Device AI Inference](https://github.com/user-attachments/assets/edb0bc30-3641-4049-87df-118b3c19a068)
-
-To run the models locally on your device:
-
-1. **Prepare the ultrasound image or video.**
-2. **Run the inference model** to get results in real time.
-
----
+![1](https://github.com/zhanghaotian0/Proprioceptor-Simualtion-Framework/blob/main/image/zhang20202.jpg)
 
 ## **System Usage**
 
